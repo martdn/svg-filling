@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>svg filling</title>
+    <link rel="stylesheet" href="assets/svg-filling.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="example">
+            <span class="[ icon icon-arrow icon-arrow-right ] -fill-red active" data-filling-state="active"></span>
+            <span class="[ icon icon-arrow icon-arrow-left ] -fill-blue" data-filling-state="hover"></span>
+            <span class="[ icon icon-arrow icon-arrow-up ] -fill-blue" data-filling-state="hover"></span>
+            <span class="[ icon icon-arrow icon-arrow-down ] -fill-yellow" data-filling-state="hover"></span>
+
+            <button type="button" class="btn" data-filling-state="hover">
+                <span class="[ icon icon-arrow icon-arrow-down-left ] -fill-blue"></span>
+            </button>
+
+            <button type="button" class="btn" data-filling-state="hover">
+                <span class="[ icon icon-arrow icon-arrow-down-right ] -fill-yellow"></span>
+            </button>
+        </div>
+    </div>
+    <script src="../lib/svg-filling.js"></script>
+    <script>
+        svgFiliing({
+            svgSelector: 'icon'
+        });
+    </script>
+</body>
+</html>
